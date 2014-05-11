@@ -11,7 +11,7 @@
     <title>All Products : Aling Nena </title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/1bootstrap.min.css" rel="stylesheet">
+    <link href="/css/2bootstrap.css" rel="stylesheet">
 
     <link href="/css/admin.css" rel="stylesheet">
 
@@ -24,10 +24,12 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">Store</a>
+          <a class="navbar-brand" href="/">Home</a>
+	<a class="navbar-brand" href="/about">About us</a>
+	<a class="navbar-brand" href="/products">Products</a>
         </div>
       </div>
     </div>
@@ -43,7 +45,6 @@
               <td>Name</td>
               <td>Price</td>
               <td>Quantity</td>
-              <td>Sold</td>
             </tr>
           </thead>
           <tbody>
@@ -53,14 +54,12 @@
               <td><%= product.name %></td>
               <td><%= product.price %></td>
               <td><%= product.quantity %></td>
-              <td><%= product.sold %></td>
-              <td><a href="/edit_product/<%= product.id %>" class="btn btn-default btn-primary">Edit</a></td>
-              <td><a href="/delete_product/<%= product.id %>" class="btn btn-default btn-danger">Delete</a></td>
+              <td><a href="/buy/<%= product.id %>" class="btn btn-default btn-primary">Buy Item</a></td>
+              
             </tr>
 			<% end %>          
 			</tbody>          
         </table>
-        <a href="/new_product" class="btn btn-default">Create New Product</a>
       </div>
 
     </div><!-- /.container -->

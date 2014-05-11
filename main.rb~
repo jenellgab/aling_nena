@@ -54,7 +54,6 @@ get '/' do
 		@item = Item.find(ran)
 		temp << @item
 	end 
-		@array = temp
 	erb :index
 end
 

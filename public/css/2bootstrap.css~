@@ -1402,7 +1402,7 @@ pre code {
 }
 table {
   max-width: 100%;
-  background-color: #FECC6B;
+  background-color: transparent;
 }
 th {
   text-align: left;
@@ -1465,7 +1465,7 @@ th {
 }
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #FEB628;
+  background-color: #808080;
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
@@ -5785,7 +5785,7 @@ button.close {
 }
 .navbar-default .badge {
   background-color: #fff;
-  color: #ad1d28;
+  color: #ecd77f;
 }
 .btn .caret {
   border-top-color: #fff;
